@@ -6,7 +6,7 @@ import CartItem from './components/CarItem';
 export default function App() {
   return (
     <View style={styles.container}>
-      <CartItem name={"Model X"} description={"Starting at $65,000"}/>
+      <CartItem name={"Model XYZ"} description={"Starting at $65,000"}/>
       <StatusBar style="auto" />
     </View>
   );
