@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
-import styles from './style'
+import styles from './style' 
 const CartItem = (props) => {
     return (
         <View style={styles.carContainer}>
