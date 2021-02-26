@@ -4,14 +4,10 @@ import styles from './style';
 import StyleButton from '../StyleButton';
 
 const CartItem = (props) => {
-    const { name, tagline, image, taglineCTA } = props;
-    console.log(taglineCTA);
+    const { name, tagline, image, taglineCTA } = props.car;
     return (
         <View style={styles.carContainer}>
-            <ImageBackground
-                source={image}
-                style={styles.image}
-            />
+            <ImageBackground source={image} style={styles.image} />
             <View style={styles.titles}>
                 <Text style={styles.title}>{name}</Text>
                 <Text style={styles.subtitle}>
@@ -22,17 +18,12 @@ const CartItem = (props) => {
             </View>
 
             <View style={styles.buttonsContainer}>
-                <StyleButton
-                    type="primary"
-                    content="Custom Order"
-                    onPress={() => {
-                        console.warn("Custom order was pressed");
-                    }} />
+                <StyleButton type="primary" content="Custom Order" onPress={() => {
+                    console.warn("Custom order was pressed");
+                }} />
 
                 <StyleButton
-                    type="secondary"
-                    content="Existing Inventory"
-                    onPress={() => {
+                    type="secondary" content="Existing Inventory" onPress={() => {
                         console.warn("Existing inventory was clicked");
                     }} />
             </View>
